@@ -15,6 +15,7 @@
                 <li><a href="#products">Products</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
             </ul>
         </nav>
     </header>
@@ -25,14 +26,19 @@
         <section id="products">
             <h2>Our Products</h2>
             <div class="product-list">
-                <!-- Repeat this block for each product -->
-                <div class="product">
-                    <img src="path/to/vegetable1.jpg" alt="Vegetable 1">
+                <div class="product" data-name="Vegetable 1" data-price="1.99">
+                    <img src="img/vegetable1.jpg" alt="Vegetable 1">
                     <h3>Vegetable 1</h3>
                     <p>$1.99</p>
                     <button>Add to Cart</button>
                 </div>
-                <!-- End of product block -->
+                <div class="product" data-name="Vegetable 2" data-price="2.49">
+                    <img src="img/vegetable2.jpg" alt="Vegetable 2">
+                    <h3>Vegetable 2</h3>
+                    <p>$2.49</p>
+                    <button>Add to Cart</button>
+                </div>
+                <!-- Repeat for more products -->
             </div>
         </section>
         <section id="about">
@@ -50,6 +56,12 @@
                 <textarea id="message" name="message" required></textarea>
                 <button type="submit">Send</button>
             </form>
+        </section>
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="total-price">0.00</span></p>
+            <button id="checkout-button">Checkout</button>
         </section>
     </main>
     <footer>
