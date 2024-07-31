@@ -30,7 +30,7 @@ nav ul li a {
 }
 
 .banner {
-    background-image: url('path/to/banner.jpg');
+    background-image: url('img/banner.jpg');
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -71,6 +71,30 @@ form label, form input, form textarea, form button {
 }
 
 form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#cart {
+    display: none;
+    padding: 20px;
+}
+
+#cart ul {
+    list-style: none;
+    padding: 0;
+}
+
+#cart ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#checkout-button {
     background-color: #4CAF50;
     color: white;
     border: none;
