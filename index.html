@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetable Sales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Vegetable Sales</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="banner">
+            <h1>Fresh Vegetables Delivered to Your Doorstep</h1>
+        </section>
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product-list">
+                <!-- Repeat this block for each product -->
+                <div class="product">
+                    <img src="path/to/vegetable1.jpg" alt="Vegetable 1">
+                    <h3>Vegetable 1</h3>
+                    <p>$1.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <!-- End of product block -->
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to our vegetable sales website! We provide fresh vegetables directly from the farm to your table.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Vegetable Sales. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
